@@ -1,5 +1,6 @@
-@import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import "tailwindcss";
+
 
 * {
   padding: 0;
@@ -22,10 +23,6 @@
 @theme {
   --font-inter: "Inter", sans-serif;
 
-  --color-background: var(--bg-color);
-  --color-foreground: var(--text-color);
-  --color-icon: var(--icon-color);
-
   --container-width: 1200px;
 }
 
@@ -35,3 +32,20 @@ body {
   color: var(--text-color);
 }
 
+
+
+
+/* utilities */
+@layer utilities{
+
+}
+
+
+/* components */
+@layer components {
+  
+}
+
+
+
+/* custom css */
