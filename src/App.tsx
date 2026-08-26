@@ -1,13 +1,32 @@
-import Header from "./components/Header"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Layout from "./Layout"
+import Home from "./pages/Home"
+import Shop from "./pages/Shop"
+import Men from "./pages/Men"
+import Boys from "./pages/Boys"
+import OurStory from "./pages/OurStory"
+
 
 const App = () => {
 
   return (
     <>
-      <Header />
-      <main>
+      <BrowserRouter>
+      
+      <Routes>
+        
+        <Route path="/" element={<Layout />}>
 
-      </main>
+        <Route index element={<Home />}/>
+        <Route path="shop" element={<Shop />}/>
+        <Route path="men" element={<Men />}/>
+        <Route path="boys" element={<Boys />}/>
+        <Route path="ourstory" element={<OurStory />}/>
+
+        </Route>
+
+      </Routes>
+      </BrowserRouter>
     </>
   )
 }
