@@ -1,10 +1,10 @@
-import facebook from "../assets/svg/Facebook.svg"
-import twitter from "../assets/svg/Twitter.svg"
-import instagram from "../assets/svg/Instagram.svg"
-import linkedin from "../assets/svg/Linkedin.svg"
+import facebook from "@/assets/svg/Facebook.svg"
+import twitter from "@/assets/svg/Twitter.svg"
+import instagram from "@/assets/svg/Instagram.svg"
+import linkedin from "@/assets/svg/Linkedin.svg"
 import { useTheme } from '@/context/ThemeContext'
-import sun from "../assets/svg/Sun.svg"
-import moon from "../assets/svg/moon.svg"
+import sun from "@/assets/svg/sun.svg"
+import moon from "@/assets/svg/moon.svg"
 
 const Header = () => {
 
@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header className="bg-[#121212] w-full h-8 flex items-center justify-center">
 
-      <nav className="w-3xl h-full flex items-center justify-between">
+      <nav className="w-3xl h-full flex items-center justify-between px-10">
 
         <ul className="flex items-center gap-2">
 
