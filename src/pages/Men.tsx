@@ -2,9 +2,9 @@ import React from 'react'
 
 const Men = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <h2>This is the Men Page</h2>
+    </>
   )
 }
 

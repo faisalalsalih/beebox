@@ -1,10 +1,9 @@
-import React from 'react'
 
 const OurStory = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+    <h2>This is Our Story</h2>      
+    </>
   )
 }
 

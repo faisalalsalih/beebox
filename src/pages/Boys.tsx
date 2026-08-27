@@ -1,10 +1,9 @@
-import React from 'react'
 
 const Boys = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <h2>This is the Boys page</h2>
+    </>
   )
 }
 

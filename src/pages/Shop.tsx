@@ -1,10 +1,9 @@
-import React from 'react'
 
 const Shop = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <h2>This is Our Shop</h2>
+    </>
   )
 }
 
