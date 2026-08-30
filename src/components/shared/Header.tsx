@@ -12,7 +12,7 @@ const Header = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <header className="bg-[#121212] w-full h-8 flex items-center justify-center">
+    <header className="bg-[#121212] w-full h-8 flex items-center justify-center sticky top-0 z-20">
 
       <nav className="w-3xl h-full flex items-center justify-between px-10">
 

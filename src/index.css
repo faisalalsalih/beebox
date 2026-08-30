@@ -146,6 +146,14 @@
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) * 1.2);
+
+
+  --animate-zoom-slow: zoomSlow 10s ease-out forwards;
+
+  @keyframes zoomSlow {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.15); }
+  }
 }
 
 
