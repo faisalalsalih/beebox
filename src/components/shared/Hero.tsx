@@ -17,35 +17,35 @@ const slides: Slide[] = [
   {
   title: "Elevate Your Style",
   description:
-    "Discover the latest fashion trends with premium outfits designed for every occasion.",
+    "Discover the latest fashion trends with premium outfits designed for every occasion.New Collection will give the passion to achieve more and courage",
   buttonText: "Shop Collection",
   image: image1,
 },
 {
   title: "New Season Arrivals",
   description:
-    "Refresh your wardrobe with our newest collection of stylish and timeless pieces.",
+    "Refresh your wardrobe with our newest collection of stylish and timeless pieces enhance your way of life by putting everydots in a sequence",
   buttonText: "View New Arrivals",
   image: image2,
 },
 {
   title: "Fashion That Inspires",
   description:
-    "From casual essentials to statement looks, find everything you need to express your style.",
+    "From casual essentials to statement looks, find everything you need to express your style the beauty lie which you wear daily not whay you just see everyday",
   buttonText: "Explore Now",
   image: image3,
 },
 {
   title: "Exclusive Designer Picks",
   description:
-    "Shop handpicked fashion favorites crafted with quality, elegance, and modern trends in mind.",
+    "Shop handpicked fashion favorites crafted with quality, elegance, and modern trends need modern prople which adpat that change in a polite way",
   buttonText: "Discover More",
   image: image4,
 },
 {
   title: "Shop the Perfect Look",
   description:
-    "Complete your wardrobe with trendsetting apparel, accessories, and must-have fashion pieces.",
+    "Complete your wardrobe with trendsetting apparel, accessories, and must-have fashion pieces and also invest in yourself by putting yourself ahead of the time",
   buttonText: "Shop Now",
   image: image5,
 }
@@ -58,8 +58,6 @@ const Hero = () => {
   const progressBars = useRef<HTMLDivElement[]>([]);
   const imageLayers = useRef<HTMLDivElement[]>([]);
 
-
-  console.log(imageLayers, "This are images that i want to see in the console");
 
   // Content Refs
   const titleRef = useRef<HTMLHeadingElement | null>(null);
@@ -75,6 +73,7 @@ const Hero = () => {
     });
 
     const currentImage = imageLayers.current[activeIndex];
+    
     const tl = gsap.timeline();
 
     // 2. Hide all non-active images and show active image layer instantly
@@ -156,10 +155,12 @@ const Hero = () => {
     return () => {
       tl.kill();
     };
+
+
   }, [activeIndex]);
 
   return (
-    <section className="relative h-dvh z-10 w-full overflow-hidden bg-black text-white rounded-none sm:rounded-3xl">
+    <section className="relative h-dvh z-10 w-full overflow-hidden bg-black text-white rounded-2xl sm:rounded-3xl">
       {/* Stacked Image Layers - Pre-rendered in DOM */}
       {slides.map((slide, index) => (
         <div
@@ -176,36 +177,37 @@ const Hero = () => {
       ))}
 
       {/* Dark Overlay for Text Legibility */}
-      <div className="absolute inset-0 bg-black/40 z-10" />
+      <div className="absolute inset-0 bg-black/40 z-11" />
 
       {/* Content & Layout Wrapper */}
       <div className="relative z-20 flex h-full flex-col justify-between px-10 pb-12 pt-24">
+
         {/* Main Text Content Container */}
         <div className="my-auto max-w-3xl text-center sm:text-left">
           <h1
             ref={titleRef}
-            className="text-5xl font-bold leading-tight tracking-tight md:text-6xl"
+            className="text-3xl sm:text-5xl font-bold leading-tight tracking-tight md:text-6xl"
           >
             {slides[activeIndex].title}
           </h1>
 
           <p
             ref={descRef}
-            className="mt-4 text-lg text-gray-200 md:text-xl"
+            className="mt-4 text-sm sm:text-lg text-gray-200 md:text-xl"
           >
             {slides[activeIndex].description}
           </p>
 
           <button
             ref={buttonRef}
-            className="mt-8 cursor-pointer rounded-full bg-white px-8 py-3.5 font-semibold text-black transition-transform hover:scale-105 active:scale-95"
+            className="mt-8 cursor-pointer rounded-full bg-white px-4 sm:px-8 py-2.5 sm:py-3.5 font-semibold text-black transition-transform hover:scale-105 active:scale-95"
           >
             {slides[activeIndex].buttonText}
           </button>
         </div>
 
         {/* Progress Bars pinned at the bottom */}
-        <div className="flex max-w-xl gap-1 mb-20">
+        <div className="flex max-w-xl gap-1">
           {slides.map((_, index) => (
             <div
               key={index}
@@ -220,7 +222,9 @@ const Hero = () => {
             </div>
           ))}
         </div>
+
       </div>
+
     </section>
   );
 };
