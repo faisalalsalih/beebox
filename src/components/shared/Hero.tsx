@@ -160,7 +160,7 @@ const Hero = () => {
   }, [activeIndex]);
 
   return (
-    <section className="relative h-dvh z-10 w-full overflow-hidden bg-black text-white rounded-2xl sm:rounded-3xl">
+    <section className="relative h-150 sm:h-175 z-10 w-full overflow-hidden bg-black text-white rounded-2xl sm:rounded-3xl">
       {/* Stacked Image Layers - Pre-rendered in DOM */}
       {slides.map((slide, index) => (
         <div

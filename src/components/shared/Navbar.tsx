@@ -12,7 +12,7 @@ const navItems = [
   { path: "/", label: "HOME" },
   { path: "/shop", label: "SHOP" },
   { path: "/men", label: "MEN" },
-  { path: "/boys", label: "WOMEN" },
+  { path: "/boys", label: "BOYS" },
   { path: "/ourstory", label: "OUR STORY" }
 ]
 
@@ -25,7 +25,7 @@ const Navbar = () => {
     <nav className="w-full h-12 flex items-center justify-center">
 
       <section className="h-full w-full max-w-width flex items-center justify-between flex-1 px-10">
-        <h1 className="logo text-xl font-bold">RAWBLOX</h1>
+        <h1 className="logo text-xl font-bold">BEEBOX</h1>
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex items-center gap-6">
