@@ -25,7 +25,7 @@ const Button = ({ title }: ButtonProps) => {
 
                 {/* Text */}
                 <p className="relative z-10 font-semibold text-md text-gray-600
-                group-hover:text-white transition-colors duration-300">
+                group-hover:text-white transition-colors duration-300 truncate">
                     {title}
                 </p>
 
