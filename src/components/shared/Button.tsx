@@ -11,7 +11,7 @@ const Button = ({ title }: ButtonProps) => {
     return (
         <>
             <button
-                className="relative overflow-hidden w-[60%] bg-background pl-10 pr-1 py-1 rounded-full flex items-center gap-7 group cursor-pointer"
+                className="relative overflow-hidden w-[100%] lg:w-[60%] bg-background pl-10 pr-1 py-1 rounded-full flex items-center gap-7 group cursor-pointer"
             >
                 {/* Expanding Circle */}
                 <div

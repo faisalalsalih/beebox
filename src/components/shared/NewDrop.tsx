@@ -76,7 +76,7 @@ const NewDrop = () => {
   return (
     <section
       ref={containerRef}
-      className="w-full max-w-7xl mx-auto py-12 px-5 flex flex-col gap-8"
+      className="w-full max-w-7xl mx-auto py-2 px-5 flex flex-col gap-8"
 
     >
       {/* Heading */}
