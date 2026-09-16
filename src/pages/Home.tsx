@@ -3,6 +3,7 @@ import Hero from "@/components/shared/Hero"
 import NewDrop from "@/components/shared/NewDrop"
 import Solutions from "@/components/shared/Solutions"
 import Carousel from "@/components/shared/Carousel"
+import BlackCarousel from "@/components/shared/BlackCarousel"
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
         <Solutions />
         <Description />
         <Carousel />
+        <BlackCarousel />
       </section>
     </>
   )

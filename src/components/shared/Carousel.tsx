@@ -43,6 +43,7 @@ const sampleCards = [
 const AUTO_PLAY_INTERVAL = 4000;
 
 export const Carousel: React.FC = () => {
+
     const containerRef = useRef<HTMLDivElement>(null);
     const trackRef = useRef<HTMLDivElement>(null);
     const firstCardRef = useRef<HTMLElement>(null);
@@ -155,7 +156,7 @@ export const Carousel: React.FC = () => {
     }, { scope: containerRef, dependencies: [cardStep] });
 
     return (
-        <section className="w-full max-w-7xl mx-auto py-10 md:py-16 overflow-hidden bg-background text-black">
+        <section className="w-full max-w-7xl mx-auto py-10 md:py-16 overflow-hidden bg-background text-foreground">
             {/* Header */}
             <div className="max-w-3xl px-4 mb-8 md:mb-12">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight uppercase mb-3 md:mb-4">
@@ -183,9 +184,9 @@ export const Carousel: React.FC = () => {
                         <article
                             key={`${card.id}-${index}`}
                             ref={index === 0 ? firstCardRef : null}
-                            className="relative h-[500px] sm:h-[600px] w-[calc(100vw-32px)] sm:w-[320px] md:w-[380px] shrink-0 rounded-2xl overflow-hidden border flex flex-col justify-between select-none"
+                            className="relative h-[500px] sm:h-[600px] w-[calc(100vw-32px)] sm:w-[320px] md:w-[380px] shrink-0 rounded-2xl overflow-hidden border select-none"
                         >
-                            <div className="h-full w-full overflow-hidden relative z-10 bg-neutral-800">
+                            <div className="h-full w-full overflow-hidden relative z-10">
                                 <img
                                     src={card.image}
                                     alt={card.title}
@@ -225,6 +226,7 @@ export const Carousel: React.FC = () => {
                     </svg>
                 </button>
             </div>
+
         </section>
     );
 };
