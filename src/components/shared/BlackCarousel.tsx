@@ -37,7 +37,7 @@ const BlackCarousel = () => {
             <span className="text-2xl font-semibold">$64.99</span>
           </div>
 
-          <Button title="Shop Now"/>
+          <Button title="Shop Now" width={50}/>
 
         </div>
 

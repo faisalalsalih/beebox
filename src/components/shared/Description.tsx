@@ -46,7 +46,7 @@ const Description = () => {
       <div className="flex flex-col gap-4 w-full h-fit" id="description">
         <p className="mb-3 text-muted-foreground">Born from the pulse of the streets, our brand is a tribute to the rebels, the dreamers, and the rule-breakers who shape the culture. Inspired by the raw energy of city life—graffiti-covered alleys, underground music scenes, and late-night skate sessions—we craft streetwear that speaks to individuality and self-expression.</p>
         <p className="mb-3 text-muted-foreground">Every stitch, every design, and every drop is a reflection of the movement, blending bold graphics, oversized silhouettes, and urban edge. More than just clothing, we’re a statement—wear your story, break the mold, and define your own path.4o</p>
-        <Button title="Get it now"/>
+        <Button title="Get it now" width={50} />
       </div>
 
     </section>      

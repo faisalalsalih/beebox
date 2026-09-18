@@ -83,7 +83,7 @@ const Solutions = () => {
                             <div className="flex flex-col gap-6 max-w-full">
                                 <h1 className="card-header">Built by the streets, made for you</h1>
                                 <p className="text-background text-sm">From the street to your styles our journey is all about self-expression and rebellion Join the movement.</p>
-                                <Button title="Order Now" />
+                                <Button title="Order Now" width={60} />
                             </div>
                         </div>
                     </div>
@@ -98,7 +98,7 @@ const Solutions = () => {
                             <div className="flex flex-col gap-6 max-w-full">
                                 <h1 className="card-header">Elevate Your Street Game</h1>
                                 <p className="text-background text-sm">From bold graphics to everyday essentials, explore our latest drops and signature pieces designed for the culture.</p>
-                                <Button title="Shop Collections" />
+                                <Button title="Shop Collections" width={60} />
                             </div>
                         </div>
                     </div>

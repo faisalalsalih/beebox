@@ -4,6 +4,7 @@ import NewDrop from "@/components/shared/NewDrop"
 import Solutions from "@/components/shared/Solutions"
 import Carousel from "@/components/shared/Carousel"
 import BlackCarousel from "@/components/shared/BlackCarousel"
+import SecondHero from "@/components/shared/SecondHero"
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
         <Description />
         <Carousel />
         <BlackCarousel />
+        <SecondHero />
       </section>
     </>
   )
