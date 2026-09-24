@@ -11,8 +11,6 @@ import {
 const navItems = [
   { path: "/", label: "HOME" },
   { path: "/shop", label: "SHOP" },
-  { path: "/men", label: "MEN" },
-  { path: "/boys", label: "BOYS" },
   { path: "/ourstory", label: "OUR STORY" }
 ]
 
